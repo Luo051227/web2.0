@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行銷專家 | 提升品牌影響力</title>
+    <style>
+        /* 通用樣式 */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #dab393;
+            color: #fff;
+            padding: 0.7rem 0;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFC107;
+        }
+
+        /* 英雄區域 */
+        #hero {
+            background: url('https://i0.wp.com/virtualsnipers.com/blog/wp-content/uploads/2023/01/Developing-a-Comprehensive-Marketing-Strategy-in-2023.jpg?resize=825%2C391&ssl=1/1920x600') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 10rem 0;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #FFC107;
+            color: #333;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #E0A800;
+        }
+
+        /* 服務區域 */
+        .section {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        #about{
+            font-size: 16px;
+            line-height: 1.8; 
+        }
+
+        .contact-card{
+            background: #d3b87f;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .back{
+            display: inline-block;
+            background: #d3caad;
+            color: #333;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        /* 当前页按钮样式 */
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* 禁用按钮样式 */
+        .pagination a.disabled {
+            background-color: #e0e0e0;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+
+        /* 分页按钮 */
+        .pagination a {
+            padding: 10px 15px;
+            margin: 0 5px;
+            text-decoration: none;
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* 分页容器 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            list-style: none;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- 頁首 -->
+    <header>
+        <div class="container">
+            <h1 class="logo">行銷專家</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services" class="nav-link">服務</a></li>
+                    <li><a href="#about" class="nav-link">關於我們</a></li>
+                    <li><a href="#contact" class="nav-link">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄區域 -->
+    <section id="hero">
+        <div class="hero-container">
+            <h2>讓您的品牌脫穎而出</h2>
+            <p>專業的行銷解決方案，實現您的商業目標。</p>
+            
+            <a href="#contact" class="btn">立即諮詢</a>
+        </div>
+    </section>
+
+    <!-- 服務區域 -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>我們的服務</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="https://ctmaxs.com/wp-content/uploads/2017/08/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99%E8%A1%8C%E9%8A%B7-%E7%A4%BE%E4%BA%A4%E5%AA%92%E9%AB%94%E5%B9%B3%E5%8F%B0%E8%A1%8C%E9%8A%B7-%E7%A4%BE%E7%BE%A4%E8%A1%8C%E9%8A%B7%E5%85%AC%E5%8F%B8CTMaxs.jpg" width="200" height="150"/>
+                    <h3>社群媒體行銷</h3>
+                    <p>協助您的品牌在各大平台吸引目光，建立忠實粉絲群。</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://www.geniuserp.com/wp-content/uploads/2023/08/blog-seo.jpg" width="200" height="150"/>
+                    <h3>搜尋引擎優化 (SEO)</h3>
+                    <p>透過精準的 SEO 策略，讓您的網站在搜尋引擎中脫穎而出。</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://growthmarketing.tw/wp-content/uploads/2019/12/quality-2-scaled.jpg" width="200" height="150"/>
+                    <h3>內容行銷</h3>
+                    <p>創造高品質內容，增加品牌信任度與轉化率。</p>
+                    
+                </div>
+                <div class="service-card">
+                    <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/2395403/93753_359314.png" width="200" height="150"/>
+                    <h3>數據分析</h3>
+                    <p>以數據為基礎的策略，確保每一分行銷預算都有最佳效果。</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我們區域 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>關於我們</h2>
+            <p1>
+                我們是一支由行銷專家、設計師與數據分析師組成的多元化團隊，致力於透過專業知識與創新思維，幫助企業實現目標。無論您是希望提升品牌知名度、吸引更多客戶，
+                還是優化行銷投資報酬率，我們都能為您量身打造解決方案。我們的行銷專家深諳市場趨勢與消費者行為，善於制定具前瞻性的策略；設計師擅長將品牌理念轉化為視覺
+                藝術，讓品牌形象深入人心；數據分析師則專注於挖掘數據中的洞見，為每一個決策提供可靠依據。我們的解決方案結合創意與策略，並以精準執行為核心，覆蓋數位行
+                銷、社群媒體管理、內容創作、廣告投放及市場分析等領域。我們相信，每個品牌都有自己的故事，而我們的任務就是幫助您以最具影響力的方式講述它，讓您的品牌在
+                競爭中脫穎而出。選擇我們，您將獲得的不僅是行銷服務，更是一個真正專業且熱忱的合作夥伴。我們期待與您攜手，共創品牌成功的未來！</p1>
+            <img src="https://p6.itc.cn/q_70/images03/20210304/9ab7bc45b7044f4b9d2f48dac8e45ca5.jpeg" width="600"/>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-card">
+                <h2>聯絡我們</h2>
+            <form id="contact-form">
+                <label for="name">姓名</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="輸入您的姓名" required>
+                <br>
+                <br>
+
+                <label for="email">電子郵件</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="輸入您的電子郵件" required>
+                <br>
+                <br>
+
+                <label for="message">訊息</label>
+                <br>
+                <textarea id="message" name="message" rows="5" placeholder="請留下您的訊息" required></textarea>
+                <br>
+                <br>
+
+                <button type="submit" class="btn">送出</button>
+            </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--回到沒加css的葉面-->
+
+    <ul class="pagination">
+
+        
+
+            
+        <!-- 页码链接 -->
+        <li><a href="5.html">1</a></li>
+        <li><a href="6.html" class="active">2</a></li>
+
+            
+
+    </ul>
+        
+
+
+
+
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <p>多媒體報告 組員:羅詩喬 陳品臻 徐品豐</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滾動功能
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 表單提交處理
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                alert('請填寫所有欄位！');
+                return;
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert('請輸入有效的電子郵件地址！');
+                return;
+            }
+
+            alert('感謝您的留言！我們將盡快回覆您。');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
